@@ -1,0 +1,90 @@
+.page-header {
+  background-color: #f2f1f3;
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.page-header__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.page-header__location {
+  display: flex;
+}
+
+.page-header__location-city,
+.page-header__location-shops {
+  display: flex;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.page-header__location-city {
+  margin-right: 25px;
+}
+
+.page-header__location-city span {
+  margin-right: 5px;
+}
+
+.page-header__location-arrow {
+  transform: rotate(90deg);
+}
+
+.page-header__location-shops {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.page-header__location-pin {
+  margin-right: 4px;
+}
+
+.page-header__contacts {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__contacts-phone {
+  margin-right: 23px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1a1a1a;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.page-header__contacts-callback {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #1a1a1a;
+  padding: 11px 16px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    color: #ffffff;
+  }
+}
