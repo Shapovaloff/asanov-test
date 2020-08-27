@@ -1,15 +1,29 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+(function () {
+  var orderBtn = document.querySelectorAll('.order__btn');
+  var orderBtnBlock = document.querySelectorAll('.order__block-btn');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+  var hiddenButton = function (index) {
+    orderBtn.forEach(function (item, i) {
+      if (i === index) {
+        item.style.display = 'none';
+      }
+    });
+  };
+
+  var showButton = function (index) {
+    orderBtnBlock.forEach(function (item, i) {
+      if (i === index) {
+        item.style.display = 'flex';
+      }
+    });
+  };
+
+  orderBtn.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+      hiddenButton(index);
+      showButton(index);
+    });
+  });
+})();

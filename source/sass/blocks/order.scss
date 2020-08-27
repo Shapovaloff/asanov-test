@@ -1,0 +1,90 @@
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.order__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+}
+
+.order__item {
+  align-self: flex-start;
+
+  &--price {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &--oldprice {
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a2a0a3;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.5px;
+      background-color: #a2a0a3;
+      top: 54%;
+    }
+  }
+}
+
+.order__btn {
+  min-width: 85px;
+  padding: 11px 17px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 1px solid $accent-color;
+  color: $accent-color;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: #ffffff
+  }
+}
+
+.order__block-btn {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 85px;
+  min-height: 40px;
+  border: 1px solid $accent-color;
+  border-radius: 8px;
+  padding: 7px 5px;
+}
+
+.order__btn-plus,
+.order__btn-minus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #fdeaf1;
+    color: $accent-color;
+  }
+}

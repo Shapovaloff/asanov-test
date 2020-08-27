@@ -1,0 +1,19 @@
+.payments__list {
+  @include reset-list;
+  display: flex;
+  width: 244px;
+}
+
+.payments__subtitle {
+  margin: 0;
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+
+.payments__item {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

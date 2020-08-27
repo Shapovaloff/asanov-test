@@ -62,21 +62,35 @@
 }
 
 .cards__item {
+  position: relative;
+  width: 224px;
+  min-height: 329px;
+}
+
+.cards__item-inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
   border: 1px solid #e6e4e7;
   border-radius: 8px;
-  width: 224px;
-
   cursor: pointer;
+  background-color: #fff;
 
   &:hover,
   &:focus {
     border-color: $accent-color;
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.12);
+    bottom: auto
   }
+}
+
+.cards__item-img {
+  display: block;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .cards__promo {
@@ -125,68 +139,11 @@
 .cards__title {
   flex-grow: 1;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 31px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-}
-
-.cards__order {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.cards__order-list {
-  @include reset-list;
-  display: flex;
-  flex-direction: column;
-}
-
-.cards__order-item {
-  align-self: flex-start;
-
-  &--price {
-    font-size: 22px;
-    line-height: 24px;
-    font-weight: 700;
-  }
-
-  &--oldprice {
-    position: relative;
-    font-size: 12px;
-    line-height: 16px;
-    color: #a2a0a3;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 0.5px;
-      background-color: #a2a0a3;
-      top: 54%;
-    }
-  }
-}
-
-.cards__order-btn {
-  padding: 11px 17px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 8px;
-  border: 1px solid $accent-color;
-  color: $accent-color;
-  background-color: transparent;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    color: #ffffff
-  }
+  min-height: 48px;
 }
 
 .cards__availability {
@@ -203,3 +160,40 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+.cards__descr {
+  @include reset-list;
+  display: none;
+  margin-top: 16px;
+}
+
+.cards__item:hover .cards__descr,
+.cards__item:focus .cards__descr {
+  display: block;
+}
+
+
+.cards__descr-item {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cards__descr-item p,
+.cards__descr-item span  {
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray-text;
+}
+
+.cards__descr-item p {
+  margin: 0;
+}
+
+.cards__descr-item span {
+  opacity: 0.9;
+  color: $color-black;
+}
+

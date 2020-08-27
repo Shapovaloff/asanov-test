@@ -1,0 +1,16 @@
+.social__list {
+  @include reset-list;
+  display: flex;
+  width: 224px;
+  margin-right: 8px;
+}
+
+.social__subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.social__item {
+  margin-right: 8px;
+}

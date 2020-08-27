@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>Asanov</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div style="display: none">
     <include src="build/img/sprite_auto.svg"></include>
@@ -21,8 +23,8 @@
         </svg>
       </a>
       <ul class="aside__site-list site-list">
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">
+        <li class="site-list__item site-list__item--sofa">
+          <a href="#" class="site-list__link site-list__link--sofa">
             <svg class="site-list__link-icon" width="28" height="28" alt="Диван">
               <use xlink:href="#icon-sofa"></use>
             </svg>
@@ -31,6 +33,43 @@
               <use xlink:href="#icon-arrow"></use>
             </svg>
           </a>
+
+          <div class="site-list__submenu submenu-sofa">
+            <h3 class="submenu-sofa__title">Диваны и кресла</h3>
+            <ul class="submenu-sofa__list">
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Все диваны</a>
+              </li>
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Диваны-кровати</a>
+              </li>
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Угловые кожаные диваны</a>
+              </li>
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Угловые тканевые диваны</a>
+              </li>
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Прямые кожаные диваны</a>
+              </li>
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Прямые тканевые диваны</a>
+              </li>
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Кресла для гостиной</a>
+              </li>
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Кресла-груши</a>
+              </li>
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Офисные кресла</a>
+              </li>
+              <li class="submenu-sofa__item">
+                <a href="#" class="submenu-sofa__link">Пуфы и банкетыки</a>
+              </li>
+            </ul>
+          </div>
+
         </li>
         <li class="site-list__item">
           <a href="#" class="site-list__link">
@@ -152,6 +191,8 @@
       </ul>
     </aside>
 
+
+
     <div class="site-wrapper__main">
       <header class="page-header">
         <div class="page-header__wrapper">
@@ -174,364 +215,503 @@
             <button href="#" class="page-header__contacts-callback">Обратный звонок</button>
           </div>
         </div>
-     </header>
-     <main class="page-main">
-       <h1 class="visually-hidden">Магазин мебели</h1>
-       <section class="user-section">
-         <form class="user-section__form form" action="" method="GET">
-           <label class="visually-hidden" for="form__search">поиск</label>
-           <input class="form__search" id="form__search" type="text" placeholder="Поиск: Диван для кухни">
-           <button class="form__button">
-             <svg class="form__button-icon" width="24" height="24">
-               <use xlink:href="#icon-search"></use>
-             </svg>
-           </button>
-         </form>
-         <ul class="user-section__user-list user-list">
-           <li class="user-list__item">
-             <a href="#" class="user-list__link user-list__link--login">
-               <svg class="user-list__link-icon" width="24" height="24">
-                 <use xlink:href="#icon-account"></use>
-               </svg>
-               <span class="user-list__link-text">Войти</span>
-             </a>
-           </li>
-           <li class="user-list__item">
-             <a href="#" class="user-list__link user-list__link--basket">
-               <span class="user-list__count">10</span>
-               <svg class="user-list__link-icon user-list__link-icon--basket" width="24" height="24">
-                 <use xlink:href="#icon-full-basket"></use>
-               </svg>
-               <span class="user-list__link-text user-list__link-text--basket">25 000 ₽</span>
-             </a>
-           </li>
-         </ul>
-       </section>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">Магазин мебели</h1>
+        <section class="user-section">
+          <form class="user-section__form form" action="" method="GET">
+            <label class="visually-hidden" for="form__search">поиск</label>
+            <input class="form__search" id="form__search" type="text" placeholder="Поиск: Диван для кухни">
+            <button class="form__button">
+              <svg class="form__button-icon" width="24" height="24">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <ul class="user-section__user-list user-list">
+            <li class="user-list__item">
+              <a href="#" class="user-list__link user-list__link--login">
+                <svg class="user-list__link-icon" width="24" height="24">
+                  <use xlink:href="#icon-account"></use>
+                </svg>
+                <span class="user-list__link-text">Войти</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a href="#" class="user-list__link user-list__link--basket">
+                <span class="user-list__count">10</span>
+                <svg class="user-list__link-icon user-list__link-icon--basket" width="24" height="24">
+                  <use xlink:href="#icon-full-basket"></use>
+                </svg>
+                <span class="user-list__link-text user-list__link-text--basket">25 000 ₽</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-       <section class="catalog">
-         <h2 class="catalog__title">
-          <svg class="catalog__title-icon" width="28" height="28">
-            <use xlink:href="#icon-promo-title"></use>
+        <section class="catalog">
+          <h2 class="catalog__title">
+            <svg class="catalog__title-icon" width="28" height="28">
+              <use xlink:href="#icon-promo-title"></use>
+            </svg>
+            <span>Лучшие предложения месяца</span>
+          </h2>
+
+          <div class="cards cards">
+            <div class="cards__button-block">
+              <button class="cards__button cards__button--prev" disabled>
+                <svg class="cards__button-arrow cards__button-arrow--prev" width="16" height="16">
+                  <use xlink:href="#icon-arrow-slider"></use>
+                </svg>
+              </button>
+              <button class="cards__button cards__button--next">
+                <svg class="cards__button-arrow cards__button-arrow--next" width="16" height="16">
+                  <use xlink:href="#icon-arrow-slider"></use>
+                </svg>
+              </button>
+            </div>
+
+            <ul class="cards__list">
+              <li class="cards__item">
+                <div class="cards__item-inner">
+                  <p class="cards__promo cards__promo--best-yellow">
+                    <svg width="16" height="16">
+                      <use xlink:href="#icon-best-price"></use>
+                    </svg>
+                    <span>Лучшая цена</span>
+                  </p>
+                  <picture>
+                    <img class="cards__item-img" src="img/cards/camerton-2-desktop@1x.jpg" width="222" height="168"
+                      srcset="img/cards/camerton-2-desktop@2x.jpg 2x" alt="Диван-трансформер «Камертон-2»">
+                  </picture>
+
+                  <div class="cards__description">
+                    <h3 class="cards__title">Диван-трансформер «Камертон-2»</h3>
+
+                    <div class="cards__order order">
+                      <ul class="order__list">
+                        <li class="order__item order__item--oldprice">10 540 ₽</li>
+                        <li class="order__item order__item--price">9 490 ₽</li>
+                      </ul>
+                      <button class="order__btn">Купить</button>
+
+                      <div class="order__block-btn">
+                        <button class="order__btn-minus" aria-label="Убрать товар">
+                          <svg width="10" height="2">
+                            <use xlink:href="#icon-minus"></use>
+                          </svg>
+                        </button>
+                        <span>99</span>
+                        <button class="order__btn-plus" aria-label="Добавить товар">
+                          <svg width="10" height="10">
+                            <use xlink:href="#icon-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <p class="cards__availability">
+                      <svg class="cards__availability-icon" width="16" height="16">
+                        <use xlink:href="#icon-car-small"></use>
+                      </svg>
+                      <span class="cards__availability-text">В наличии</span>
+                    </p>
+                    <ul class="cards__descr">
+                      <li class="cards__descr-item">
+                        <p>Механизм:</p>
+                        <span>Аккордеон</span>
+                      </li>
+                      <li class="cards__descr-item">
+                        <p>Размеры:</p>
+                        <span>90 см (B) &#215; 95 см (Г) &#215; 218 см (Ш)</span>
+                      </li>
+                      <li class="cards__descr-item">
+                        <p>Спальное место:</p>
+                        <span>160 см (Ш) &#215; 218 см (Д)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="cards__item-inner">
+                  <p class="cards__promo cards__promo--present">
+                    <svg width="16" height="16">
+                      <use xlink:href="#icon-promo"></use>
+                    </svg>
+                    <span>Кресло в подарок</span>
+                  </p>
+                  <picture>
+                    <img class="cards__item-img" src="img/cards/olimp-desktop@1x.jpg" width="222" height="168"
+                      srcset="img/cards/olimp-desktop@2x.jpg 2x" alt="Диван с декоративными подушками Олимп (Нексус)">
+                  </picture>
+                  <div class="cards__description">
+                    <h3 class="cards__title">Диван с декоративными подушками "Олимп" (Нексус)</h3>
+
+                    <div class="cards__order order">
+                      <ul class="order__list">
+                        <li class="order__item order__item--oldprice">10 540 ₽</li>
+                        <li class="order__item order__item--price">12 290 ₽</li>
+                      </ul>
+                      <button class="order__btn">Купить</button>
+                      <div class="order__block-btn">
+                        <button class="order__btn-minus" aria-label="Убрать товар">
+                          <svg width="10" height="2">
+                            <use xlink:href="#icon-minus"></use>
+                          </svg>
+                        </button>
+                        <span>99</span>
+                        <button class="order__btn-plus" aria-label="Добавить товар">
+                          <svg width="10" height="10">
+                            <use xlink:href="#icon-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <p class="cards__availability">
+                      <svg class="cards__availability-icon" width="16" height="16">
+                        <use xlink:href="#icon-car-small"></use>
+                      </svg>
+                      <span class="cards__availability-text">В наличии</span>
+                    </p>
+
+                    <ul class="cards__descr">
+                      <li class="cards__descr-item">
+                        <p>Механизм:</p>
+                        <span>Аккордеон</span>
+                      </li>
+                      <li class="cards__descr-item">
+                        <p>Размеры:</p>
+                        <span>90 см (B) &#215; 95 см (Г) &#215; 218 см (Ш)</span>
+                      </li>
+                      <li class="cards__descr-item">
+                        <p>Спальное место:</p>
+                        <span>160 см (Ш) &#215; 218 см (Д)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="cards__item">
+                <div class="cards__item-inner">
+                  <picture>
+                    <img class="cards__item-img" src="img/cards/camelia-desktop@1x.jpg" width="222" height="168"
+                      srcset="img/cards/camelia-desktop@2x.jpg 2x" alt="Диван КАМЕЛИЯ">
+                  </picture>
+                  <div class="cards__description">
+                    <h3 class="cards__title">Диван "КАМЕЛИЯ"</h3>
+
+                    <div class="cards__order order">
+                      <ul class="order__list">
+                        <li class="order__item order__item--oldprice">9 150 ₽</li>
+                        <li class="order__item order__item--price">14 490 ₽</li>
+                      </ul>
+                      <button class="order__btn">Купить</button>
+                      <div class="order__block-btn">
+                        <button class="order__btn-minus" aria-label="Убрать товар">
+                          <svg width="10" height="2">
+                            <use xlink:href="#icon-minus"></use>
+                          </svg>
+                        </button>
+                        <span>99</span>
+                        <button class="order__btn-plus" aria-label="Добавить товар">
+                          <svg width="10" height="10">
+                            <use xlink:href="#icon-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <p class="cards__availability">
+                      <svg class="cards__availability-icon" width="16" height="16">
+                        <use xlink:href="#icon-car-small"></use>
+                      </svg>
+                      <span class="cards__availability-text">В наличии</span>
+                    </p>
+                    <ul class="cards__descr">
+                      <li class="cards__descr-item">
+                        <p>Механизм:</p>
+                        <span>Аккордеон</span>
+                      </li>
+                      <li class="cards__descr-item">
+                        <p>Размеры:</p>
+                        <span>90 см (B) &#215; 95 см (Г) &#215; 218 см (Ш)</span>
+                      </li>
+                      <li class="cards__descr-item">
+                        <p>Спальное место:</p>
+                        <span>160 см (Ш) &#215; 218 см (Д)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="cards__item-inner">
+                  <p class="cards__promo cards__promo--best-accent">
+                    <svg width="16" height="16">
+                      <use xlink:href="#icon-best-price"></use>
+                    </svg>
+                    <span>Лучшая цена</span>
+                  </p>
+                  <picture>
+                    <img class="cards__item-img" src="img/cards/palermo-desktop@1x.jpg" width="222" height="168"
+                      srcset="img/cards/palermo-desktop@2x.jpg 2x" alt="Диван-кровать Палермо 2 рогожка">
+                  </picture>
+                  <div class="cards__description">
+                    <h3 class="cards__title">Диван-кровать "Палермо 2" рогожка</h3>
+
+                    <div class="cards__order order">
+                      <ul class="order__list">
+                        <li class="order__item order__item--oldprice">16 810 ₽</li>
+                        <li class="order__item order__item--price">12 790 ₽</li>
+                      </ul>
+                      <button class="order__btn">Купить</button>
+                      <div class="order__block-btn">
+                        <button class="order__btn-minus" aria-label="Убрать товар">
+                          <svg width="10" height="2">
+                            <use xlink:href="#icon-minus"></use>
+                          </svg>
+                        </button>
+                        <span>99</span>
+                        <button class="order__btn-plus" aria-label="Добавить товар">
+                          <svg width="10" height="10">
+                            <use xlink:href="#icon-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <p class="cards__availability">
+                      <svg class="cards__availability-icon" width="16" height="16">
+                        <use xlink:href="#icon-car-small"></use>
+                      </svg>
+                      <span class="cards__availability-text">В наличии</span>
+                    </p>
+                    <ul class="cards__descr">
+                      <li class="cards__descr-item">
+                        <p>Механизм:</p>
+                        <span>Аккордеон</span>
+                      </li>
+                      <li class="cards__descr-item">
+                        <p>Размеры:</p>
+                        <span>90 см (B) &#215; 95 см (Г) &#215; 218 см (Ш)</span>
+                      </li>
+                      <li class="cards__descr-item">
+                        <p>Спальное место:</p>
+                        <span>160 см (Ш) &#215; 218 см (Д)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <a href="#" class="page-footer__location">
+          <svg class="page-footer__location-pin" width="24" height="24">
+            <use xlink:href="#icon-pin"></use>
           </svg>
-           <span>Лучшие предложения месяца</span>
-         </h2>
+          <span>Магазины</span>
+        </a>
+        <nav class="page-footer__nav">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <h4 class="page-footer__subtitle">Как мы работаем?</h4>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">О нас</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Сборка и доставка</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Оплата и возврат</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Гарантия</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Рассрочка</a>
+            </li>
+          </ul>
 
-         <div class="cards cards">
-          <div class="cards__button-block">
-            <button class="cards__button cards__button--prev" disabled>
-             <svg class="cards__button-arrow cards__button-arrow--prev" width="16" height="16">
-               <use xlink:href="#icon-arrow-slider"></use>
-             </svg>
-            </button>
-            <button class="cards__button cards__button--next">
-             <svg class="cards__button-arrow cards__button-arrow--next" width="16" height="16">
-               <use xlink:href="#icon-arrow-slider"></use>
-             </svg>
-            </button>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <h4 class="page-footer__subtitle">Другая информация</h4>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Блог</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Контакты</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Социальные сети</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Бренды мебели</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Карта сайта</a>
+            </li>
+          </ul>
+
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <h4 class="page-footer__subtitle">Сотрудничество</h4>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Поставщикам</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Оптовикам</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Франчайзинг</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link">Подписка</a>
+            </li>
+          </ul>
+
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <h4 class="page-footer__subtitle page-footer__subtitle--logo">Отзывы о нас</h4>
+            </li>
+            <li class="page-footer__item page-footer__item--logo">
+              <a href="#" class="page-footer__link page-footer__link--logo">
+                <picture>
+                  <img class="page-footer__link-img" src="img/yandex-logo.png" width="80" height="16"
+                    alt="Логотип компании Яндекс">
+                </picture>
+                <svg class="page-footer__link-stars" width="87" height="16"
+                  alt="Оценка сайта на страницие компании Яндекс">
+                  <use xlink:href="#icon-stars-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item page-footer__item--logo">
+              <a href="#" class="page-footer__link page-footer__link--logo">
+                <picture>
+                  <img class="page-footer__link-img" src="img/google-logo.png" width="60" height="20"
+                    alt="Логотип компании Google">
+                </picture>
+                <svg class="page-footer__link-stars" width="87" height="16"
+                  alt="Оценка сайта на страницие компании Google">
+                  <use xlink:href="#icon-stars-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item page-footer__item--logo">
+              <a href="#" class="page-footer__link page-footer__link--logo">
+                <picture>
+                  <img class="page-footer__link-img" src="img/2gis-logo.png" width="54" height="22"
+                    alt="Логотип компании 2gis">
+                </picture>
+                <svg class="page-footer__link-stars" width="87" height="22"
+                  alt="Оценка сайта на страницие компании 2gis">
+                  <use xlink:href="#icon-stars-4,5"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="page-footer__middle">
+          <div class="page-footer__social social">
+            <h4 class="social__subtitle">Мы в соцсетях</h4>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="Ссылка на Вконтакте">
+                  <svg class="social__link-icon" width="24" height="24" alt="Вконтакте">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="Ссылка на Youtube">
+                  <svg class="social__link-icon" width="24" height="24" alt="Youtube">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="Ссылка на instagram">
+                  <svg class="social__link-icon" width="24" height="24" alt="instagram">
+                    <use xlink:href="#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="Ссылка на facebook">
+                  <svg class="social__link-icon" width="24" height="24" alt="facebook">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="Ссылка на Одноклассники">
+                  <svg class="social__link-icon" width="24" height="24" alt="Одноклассники">
+                    <use xlink:href="#icon-ok"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
 
-           <ul class="cards__list">
-             <li class="cards__item">
-               <p class="cards__promo cards__promo--best-yellow">
-                 <svg width="16" height="16">
-                   <use xlink:href="#icon-best-price"></use>
-                 </svg>
-                 <span>Лучшая цена</span>
-               </p>
-               <picture>
-                 <img class="cards__item-img" src="img/cards/camerton-2-desktop@1x.jpg" width="222" height="168" srcset="img/cards/camerton-2-desktop@2x.jpg 2x" alt="Диван-трансформер «Камертон-2»">
-               </picture>
+          <div class="page-footer__payments payments">
+            <h4 class="payments__subtitle">Мы принимаем к оплате</h4>
+            <ul class="payments__list">
+              <li class="payments__item">
+                <picture>
+                  <img class="payments__item-img" src="img/master-card.png" width="29" height="18" alt="MasterCard">
+                </picture>
+              </li>
+              <li class="payments__item">
+                <picture>
+                  <img class="payments__item-img" src="img/visa.png" width="26" height="16" alt="Visa">
+                </picture>
+              </li>
+              <li class="payments__item">
+                <picture>
+                  <img class="payments__item-img" src="img/mir.png" width="56" height="16" alt="Mir">
+                </picture>
+              </li>
+              <li class="payments__item">
+                <picture>
+                  <img class="payments__item-img" src="img/yandex-money.png" width="85" height="16" alt="Yandex Money">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-               <div class="cards__description">
-                <h3 class="cards__title">Диван-трансформер «Камертон-2»</h3>
-                <div class="cards__order">
-                  <ul class="cards__order-list">
-                    <li class="cards__order-item cards__order-item--oldprice">10 540 ₽</li>
-                    <li class="cards__order-item cards__order-item--price">9 490 ₽</li>
-                  </ul>
-                  <button class="cards__order-btn">Купить</button>
-                </div>
-                <p class="cards__availability">
-                  <svg class="cards__availability-icon" width="16" height="16">
-                    <use xlink:href="#icon-car-small"></use>
-                  </svg>
-                  <span class="cards__availability-text">В наличии</span>
-                </p>
-               </div>
-             </li>
-
-             <li class="cards__item">
-               <p class="cards__promo cards__promo--present">
-                 <svg width="16" height="16">
-                   <use xlink:href="#icon-promo"></use>
-                 </svg>
-                 <span>Кресло в подарок</span>
-               </p>
-               <picture>
-                 <img class="cards__item-img" src="img/cards/olimp-desktop@1x.jpg" width="222" height="168" srcset="img/cards/olimp-desktop@2x.jpg 2x" alt="Диван с декоративными подушками Олимп (Нексус)">
-               </picture>
-               <div class="cards__description">
-                <h3 class="cards__title">Диван с декоративными подушками "Олимп" (Нексус)</h3>
-                <div class="cards__order">
-                  <ul class="cards__order-list">
-                    <li class="cards__order-item cards__order-item--oldprice">10 540 ₽</li>
-                    <li class="cards__order-item cards__order-item--price">12 290 ₽</li>
-                  </ul>
-                  <button class="cards__order-btn">Купить</button>
-                </div>
-                <p class="cards__availability">
-                  <svg class="cards__availability-icon" width="16" height="16">
-                    <use xlink:href="#icon-car-small"></use>
-                  </svg>
-                  <span class="cards__availability-text">В наличии</span>
-                </p>
-               </div>
-             </li>
-
-             <li class="cards__item">
-               <picture>
-                 <img class="cards__item-img" src="img/cards/camelia-desktop@1x.jpg" width="222" height="168" srcset="img/cards/camelia-desktop@2x.jpg 2x" alt="Диван КАМЕЛИЯ">
-               </picture>
-               <div class="cards__description">
-                <h3 class="cards__title">Диван "КАМЕЛИЯ"</h3>
-                <div class="cards__order">
-                  <ul class="cards__order-list">
-                    <li class="cards__order-item cards__order-item--oldprice">9 150 ₽</li>
-                    <li class="cards__order-item cards__order-item--price">14 490 ₽</li>
-                  </ul>
-                  <button class="cards__order-btn">Купить</button>
-                </div>
-                <p class="cards__availability">
-                  <svg class="cards__availability-icon" width="16" height="16">
-                    <use xlink:href="#icon-car-small"></use>
-                  </svg>
-                  <span class="cards__availability-text">В наличии</span>
-                </p>
-               </div>
-             </li>
-
-             <li class="cards__item">
-               <p class="cards__promo cards__promo--best-accent">
-                 <svg width="16" height="16">
-                   <use xlink:href="#icon-best-price"></use>
-                 </svg>
-                 <span>Лучшая цена</span>
-               </p>
-               <picture>
-                 <img class="cards__item-img" src="img/cards/palermo-desktop@1x.jpg" width="222" height="168" srcset="img/cards/palermo-desktop@2x.jpg 2x" alt="Диван-кровать Палермо 2 рогожка">
-               </picture>
-               <div class="cards__description">
-                <h3 class="cards__title">Диван-кровать "Палермо 2" рогожка</h3>
-                <div class="cards__order">
-                  <ul class="cards__order-list">
-                    <li class="cards__order-item cards__order-item--oldprice">16 810 ₽</li>
-                    <li class="cards__order-item cards__order-item--price">12 790 ₽</li>
-                  </ul>
-                  <button class="cards__order-btn">Купить</button>
-                </div>
-                <p class="cards__availability">
-                  <svg class="cards__availability-icon" width="16" height="16">
-                    <use xlink:href="#icon-car-small"></use>
-                  </svg>
-                  <span class="cards__availability-text">В наличии</span>
-                </p>
-               </div>
-             </li>
-           </ul>
-         </div>
-       </section>
-     </main>
-
-     <footer class="page-footer">
-       <a href="#" class="page-footer__location">Магазины</a>
-       <nav class="page-footer__nav">
-         <ul class="page-footer__list">
-           <li class="page-footer__item">
-             <h4 class="page-footer__subtitle">Как мы работаем?</h4>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">О нас</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Сборка и доставка</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Оплата и возврат</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Гарантия</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Рассрочка</a>
-           </li>
-         </ul>
-
-         <ul class="page-footer__list">
-           <li class="page-footer__item">
-             <h4 class="page-footer__subtitle">Другая информация</h4>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Блог</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Контакты</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Социальные сети</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Бренды мебели</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Карта сайта</a>
-           </li>
-         </ul>
-
-         <ul class="page-footer__list">
-           <li class="page-footer__item">
-             <h4 class="page-footer__subtitle">Сотрудничество</h4>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Поставщикам</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Оптовикам</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Франчайзинг</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Подписка</a>
-           </li>
-         </ul>
-
-         <ul class="page-footer__list">
-           <li class="page-footer__item">
-             <h4 class="page-footer__subtitle">Сотрудничество</h4>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Поставщикам</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Оптовикам</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Франчайзинг</a>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">Подписка</a>
-           </li>
-         </ul>
-
-         <ul class="page-footer__list">
-           <li class="page-footer__item">
-             <h4 class="page-footer__subtitle">Отзывы о нас</h4>
-           </li>
-           <li class="page-footer__item">
-             <a href="#" class="page-footer__link">
-               <picture>
-                 <img class="page-footer__link-img" src="img/yandex-logo.png" width="80" height="16" alt="Логотип компании Яндекс">
-               </picture>
-               <svg class="page-footer__link-stars" width="87" height="16" alt="Оценка сайта на страницие компании Яндекс">
-                 <use xlink:href="#icon-stars-4"></use>
-               </svg>
-             </a>
-           </li>
-           <li class="page-footer__item">
-             <picture>
-               <img class="page-footer__link-img" src="img/google-logo.png" width="60" height="20" alt="Логотип компании Google">
-             </picture>
-             <svg class="page-footer__link-stars" width="87" height="16" alt="Оценка сайта на страницие компании Google">
-               <use xlink:href="#icon-stars-4"></use>
-             </svg>
-           </li>
-           <li class="page-footer__item">
-             <picture>
-               <img class="page-footer__link-img" src="img/2gis-logo.png" width="54" height="22" alt="Логотип компании 2gis">
-             </picture>
-             <svg class="page-footer__link-stars" width="87" height="22" alt="Оценка сайта на страницие компании 2gis">
-               <use xlink:href="#icon-stars-4,5"></use>
-             </svg>
-           </li>
-         </ul>
-       </nav>
-
-       <div class="page-footer__middle">
-         <ul class="page-footer__social social">
-           <li class="social__item">
-             <a href="#" class="social__link" aria-label="Ссылка на Вконтакте">
-               <svg class="social__link-icon" width="24" height="24" alt="Вконтакте">
-                 <use xlink:href="#icon-vk"></use>
-               </svg>
-             </a>
-           </li>
-           <li class="social__item">
-             <a href="#" class="social__link" aria-label="Ссылка на Youtube">
-               <svg class="social__link-icon" width="24" height="24" alt="Youtube">
-                 <use xlink:href="#icon-youtube"></use>
-               </svg>
-             </a>
-           </li>
-           <li class="social__item">
-             <a href="#" class="social__link" aria-label="Ссылка на instagram">
-               <svg class="social__link-icon" width="24" height="24" alt="instagram">
-                 <use xlink:href="#icon-instagram"></use>
-               </svg>
-             </a>
-           </li>
-           <li class="social__item">
-             <a href="#" class="social__link" aria-label="Ссылка на facebook">
-               <svg class="social__link-icon" width="24" height="24" alt="facebook">
-                 <use xlink:href="#icon-facebook"></use>
-               </svg>
-             </a>
-           </li>
-           <li class="social__item">
-             <a href="#" class="social__link" aria-label="Ссылка на Одноклассники">
-               <svg class="social__link-icon" width="24" height="24" alt="Одноклассники">
-                 <use xlink:href="#icon-ok"></use>
-               </svg>
-             </a>
-           </li>
-         </ul>
-
-         <ul class="page-footer__payments payments">
-           <li class="payments__item">
-             <picture>
-               <img class="payments__item-img" src="img/master-card.png" width="29" height="18" alt="MasterCard">
-             </picture>
-           </li>
-           <li class="payments__item">
-             <picture>
-               <img class="payments__item-img" src="img/visa.png" width="26" height="16" alt="Visa">
-             </picture>
-           </li>
-           <li class="payments__item">
-             <picture>
-               <img class="payments__item-img" src="img/mir.png" width="56" height="16" alt="Mir">
-             </picture>
-           </li>
-           <li class="payments__item">
-             <picture>
-               <img class="payments__item-img" src="img/yandex-money.png" width="85" height="16" alt="Yandex Money">
-             </picture>
-           </li>
-         </ul>
-       </div>
-
-       <div class="page-footer__copyright copyright">
-         <a href="#" class="copyright__privacy">Политика конфиденциальности</a>
-         <p class="copyright__date">© 2010-2020 Интернет-магазин мебели и товаров для дома.</p>
-         <a class="copyright__agency-link" href="https://asanov.agency/">
-           <svg class="social__link-icon" width="16" height="16" alt="logo-footer">
-             <use xlink:href="#icon-logo-footer"></use>
-           </svg>
-           <span class="copyright__agency-text">Дизайн Asanov.agency</span>
-         </a>
-       </div>
-     </footer>
+        <div class="page-footer__copyright copyright">
+          <div class="copyright__text">
+            <a href="#" class="copyright__privacy">Политика конфиденциальности</a>
+            <p class="copyright__date">© 2010-2020 Интернет-магазин мебели и товаров для дома.</p>
+          </div>
+          <a class="copyright__agency-link" href="https://asanov.agency/">
+            <svg class="social__link-icon" width="16" height="16" alt="logo-footer">
+              <use xlink:href="#icon-logo-footer"></use>
+            </svg>
+            <span class="copyright__agency-text">Дизайн Asanov.agency</span>
+          </a>
+        </div>
+      </footer>
     </div>
 
   </div>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>

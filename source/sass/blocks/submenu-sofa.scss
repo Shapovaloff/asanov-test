@@ -1,0 +1,50 @@
+.submenu-sofa {
+  display: none;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  margin-left: 280px;
+  width: 280px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  z-index: 11;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
+}
+
+.site-list__item--sofa:hover .submenu-sofa,
+.site-list__item--sofa:focus .submenu-sofa {
+  display: block;
+}
+
+.submenu-sofa__list {
+  @include reset-list;
+}
+
+.submenu-sofa__title {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.submenu-sofa__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: block;
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-black;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: #fdeaf1;
+  }
+}
