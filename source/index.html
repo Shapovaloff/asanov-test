@@ -202,114 +202,143 @@
                <svg class="user-list__link-icon user-list__link-icon--basket" width="24" height="24">
                  <use xlink:href="#icon-full-basket"></use>
                </svg>
-               <span class="user-list__link-text">25 000 ₽</span>
+               <span class="user-list__link-text user-list__link-text--basket">25 000 ₽</span>
              </a>
            </li>
          </ul>
        </section>
 
        <section class="catalog">
-         <h2 class="catalog__title">Лучшие предложения месяца</h2>
-         <ul class="catalog__cards cards">
+         <h2 class="catalog__title">
+          <svg class="catalog__title-icon" width="28" height="28">
+            <use xlink:href="#icon-promo-title"></use>
+          </svg>
+           <span>Лучшие предложения месяца</span>
+         </h2>
 
-           <li class="cards__item">
-             <p class="cards__item-best-price">
-               <svg width="16" height="16">
-                 <use xlink:href="#icon-best-price"></use>
-               </svg>
-               <span>Лучшая цена</span>
-             </p>
-             <picture>
-               <img class="cards__item-img" src="img/cards/camerton-2-desktop@1x.jpg" width="222" height="168" srcset="img/cards/camerton-2-desktop@2x.jpg 2x" alt="Диван-трансформер «Камертон-2»">
-             </picture>
-             <h3 class="cards__title">Диван-трансформер «Камертон-2»</h3>
-             <div class="cards__order">
-               <ul class="cards__order-list">
-                 <li class="cards__order-item cards__order-item--oldprice">10 540 ₽</li>
-                 <li class="cards__order-item cards__order-item--price">9 490 ₽</li>
-               </ul>
-               <button class="cards__order-btn">Купить</button>
-             </div>
-             <p class="cards__availability">
-               <svg class="cards__availability-icon" width="16" height="16">
-                 <use xlink:href="#icon-car-small"></use>
-               </svg>
-               <span class="cards__availability-text">В наличии</span>
-             </p>
-           </li>
+         <div class="cards cards">
+          <div class="cards__button-block">
+            <button class="cards__button cards__button--prev" disabled>
+             <svg class="cards__button-arrow cards__button-arrow--prev" width="16" height="16">
+               <use xlink:href="#icon-arrow-slider"></use>
+             </svg>
+            </button>
+            <button class="cards__button cards__button--next">
+             <svg class="cards__button-arrow cards__button-arrow--next" width="16" height="16">
+               <use xlink:href="#icon-arrow-slider"></use>
+             </svg>
+            </button>
+          </div>
 
-           <li class="cards__item">
-             <p class="cards__item-promo">
-               <svg width="16" height="16">
-                 <use xlink:href="#icon-promo"></use>
-               </svg>
-               <span>Кресло в подарок</span>
-             </p>
-             <picture>
-               <img class="cards__item-img" src="img/cards/olimp-desktop@1x.jpg" width="222" height="168" srcset="img/cards/olimp-desktop@2x.jpg 2x" alt="Диван с декоративными подушками Олимп (Нексус)">
-             </picture>
-             <h3 class="cards__title">Диван с декоративными подушками "Олимп" (Нексус)</h3>
-             <div class="cards__order">
-               <ul class="cards__order-list">
-                 <li class="cards__order-item cards__order-item--oldprice">10 540 ₽</li>
-                 <li class="cards__order-item cards__order-item--price">12 290 ₽</li>
-               </ul>
-               <button class="cards__order-btn">Купить</button>
-             </div>
-             <p class="cards__availability">
-               <svg class="cards__availability-icon" width="16" height="16">
-                 <use xlink:href="#icon-car-small"></use>
-               </svg>
-               <span class="cards__availability-text">В наличии</span>
-             </p>
-           </li>
+           <ul class="cards__list">
+             <li class="cards__item">
+               <p class="cards__promo cards__promo--best-yellow">
+                 <svg width="16" height="16">
+                   <use xlink:href="#icon-best-price"></use>
+                 </svg>
+                 <span>Лучшая цена</span>
+               </p>
+               <picture>
+                 <img class="cards__item-img" src="img/cards/camerton-2-desktop@1x.jpg" width="222" height="168" srcset="img/cards/camerton-2-desktop@2x.jpg 2x" alt="Диван-трансформер «Камертон-2»">
+               </picture>
 
-           <li class="cards__item">
-             <picture>
-               <img class="cards__item-img" src="img/cards/camelia-desktop@1x.jpg" width="222" height="168" srcset="img/cards/camelia-desktop@2x.jpg 2x" alt="Диван КАМЕЛИЯ">
-             </picture>
-             <h3 class="cards__title">Диван "КАМЕЛИЯ"</h3>
-             <div class="cards__order">
-               <ul class="cards__order-list">
-                 <li class="cards__order-item cards__order-item--oldprice">9 150 ₽</li>
-                 <li class="cards__order-item cards__order-item--price">14 490 ₽</li>
-               </ul>
-               <button class="cards__order-btn">Купить</button>
-             </div>
-             <p class="cards__availability">
-               <svg class="cards__availability-icon" width="16" height="16">
-                 <use xlink:href="#icon-car-small"></use>
-               </svg>
-               <span class="cards__availability-text">В наличии</span>
-             </p>
-           </li>
+               <div class="cards__description">
+                <h3 class="cards__title">Диван-трансформер «Камертон-2»</h3>
+                <div class="cards__order">
+                  <ul class="cards__order-list">
+                    <li class="cards__order-item cards__order-item--oldprice">10 540 ₽</li>
+                    <li class="cards__order-item cards__order-item--price">9 490 ₽</li>
+                  </ul>
+                  <button class="cards__order-btn">Купить</button>
+                </div>
+                <p class="cards__availability">
+                  <svg class="cards__availability-icon" width="16" height="16">
+                    <use xlink:href="#icon-car-small"></use>
+                  </svg>
+                  <span class="cards__availability-text">В наличии</span>
+                </p>
+               </div>
+             </li>
 
-           <li class="cards__item">
-             <p class="cards__item-best-price">
-               <svg width="16" height="16">
-                 <use xlink:href="#icon-best-price"></use>
-               </svg>
-               <span>Лучшая цена</span>
-             </p>
-             <picture>
-               <img class="cards__item-img" src="img/cards/palermo-desktop@1x.jpg" width="222" height="168" srcset="img/cards/palermo-desktop@2x.jpg 2x" alt="Диван-кровать Палермо 2 рогожка">
-             </picture>
-             <h3 class="cards__title">Диван-кровать "Палермо 2" рогожка</h3>
-             <div class="cards__order">
-               <ul class="cards__order-list">
-                 <li class="cards__order-item cards__order-item--oldprice">16 810 ₽</li>
-                 <li class="cards__order-item cards__order-item--price">12 790 ₽</li>
-               </ul>
-               <button class="cards__order-btn">Купить</button>
-             </div>
-             <p class="cards__availability">
-               <svg class="cards__availability-icon" width="16" height="16">
-                 <use xlink:href="#icon-car-small"></use>
-               </svg>
-               <span class="cards__availability-text">В наличии</span>
-             </p>
-           </li>
-         </ul>
+             <li class="cards__item">
+               <p class="cards__promo cards__promo--present">
+                 <svg width="16" height="16">
+                   <use xlink:href="#icon-promo"></use>
+                 </svg>
+                 <span>Кресло в подарок</span>
+               </p>
+               <picture>
+                 <img class="cards__item-img" src="img/cards/olimp-desktop@1x.jpg" width="222" height="168" srcset="img/cards/olimp-desktop@2x.jpg 2x" alt="Диван с декоративными подушками Олимп (Нексус)">
+               </picture>
+               <div class="cards__description">
+                <h3 class="cards__title">Диван с декоративными подушками "Олимп" (Нексус)</h3>
+                <div class="cards__order">
+                  <ul class="cards__order-list">
+                    <li class="cards__order-item cards__order-item--oldprice">10 540 ₽</li>
+                    <li class="cards__order-item cards__order-item--price">12 290 ₽</li>
+                  </ul>
+                  <button class="cards__order-btn">Купить</button>
+                </div>
+                <p class="cards__availability">
+                  <svg class="cards__availability-icon" width="16" height="16">
+                    <use xlink:href="#icon-car-small"></use>
+                  </svg>
+                  <span class="cards__availability-text">В наличии</span>
+                </p>
+               </div>
+             </li>
+
+             <li class="cards__item">
+               <picture>
+                 <img class="cards__item-img" src="img/cards/camelia-desktop@1x.jpg" width="222" height="168" srcset="img/cards/camelia-desktop@2x.jpg 2x" alt="Диван КАМЕЛИЯ">
+               </picture>
+               <div class="cards__description">
+                <h3 class="cards__title">Диван "КАМЕЛИЯ"</h3>
+                <div class="cards__order">
+                  <ul class="cards__order-list">
+                    <li class="cards__order-item cards__order-item--oldprice">9 150 ₽</li>
+                    <li class="cards__order-item cards__order-item--price">14 490 ₽</li>
+                  </ul>
+                  <button class="cards__order-btn">Купить</button>
+                </div>
+                <p class="cards__availability">
+                  <svg class="cards__availability-icon" width="16" height="16">
+                    <use xlink:href="#icon-car-small"></use>
+                  </svg>
+                  <span class="cards__availability-text">В наличии</span>
+                </p>
+               </div>
+             </li>
+
+             <li class="cards__item">
+               <p class="cards__promo cards__promo--best-accent">
+                 <svg width="16" height="16">
+                   <use xlink:href="#icon-best-price"></use>
+                 </svg>
+                 <span>Лучшая цена</span>
+               </p>
+               <picture>
+                 <img class="cards__item-img" src="img/cards/palermo-desktop@1x.jpg" width="222" height="168" srcset="img/cards/palermo-desktop@2x.jpg 2x" alt="Диван-кровать Палермо 2 рогожка">
+               </picture>
+               <div class="cards__description">
+                <h3 class="cards__title">Диван-кровать "Палермо 2" рогожка</h3>
+                <div class="cards__order">
+                  <ul class="cards__order-list">
+                    <li class="cards__order-item cards__order-item--oldprice">16 810 ₽</li>
+                    <li class="cards__order-item cards__order-item--price">12 790 ₽</li>
+                  </ul>
+                  <button class="cards__order-btn">Купить</button>
+                </div>
+                <p class="cards__availability">
+                  <svg class="cards__availability-icon" width="16" height="16">
+                    <use xlink:href="#icon-car-small"></use>
+                  </svg>
+                  <span class="cards__availability-text">В наличии</span>
+                </p>
+               </div>
+             </li>
+           </ul>
+         </div>
        </section>
      </main>
 
