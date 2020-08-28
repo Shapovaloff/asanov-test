@@ -1,6 +1,10 @@
 .cards {
   position: relative;
-  padding-top: 36px;
+  margin-top: 36px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 17px;
+  }
 }
 
 .cards__button-block {
@@ -9,6 +13,10 @@
   justify-content: space-between;
   right: -2px;
   top: -8px;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .cards__button {
@@ -63,6 +71,10 @@
   @media (max-width: $tablet-width) {
     justify-content: space-around;
   }
+
+  @media (max-width: $mobile-width) {
+    justify-content: flex-start;
+  }
 }
 
 .cards__item {
@@ -85,6 +97,12 @@
       display: none;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    width: 134px;
+    min-height: 285px;
+    margin-right: 10px;
+  }
 }
 
 .cards__item-inner {
@@ -94,21 +112,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #e6e4e7;
+  box-shadow: inset 0 0 0 1px #e6e4e7;
   border-radius: 8px;
   cursor: pointer;
   background-color: #fff;
+  min-height: 285px;
+  bottom: auto;
 
   &:hover,
   &:focus {
-    border-color: $accent-color;
-    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0 0 0 1px $accent-color, 0px 0px 32px rgba(0, 0, 0, 0.12);
     bottom: auto;
   }
 }
 
+.card__img-block {
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 1px;
+}
 .cards__item-img {
   display: block;
+  width: 100%;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
@@ -140,6 +165,11 @@
     background-color: $accent-color;
     color: #ffffff;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 10px;
+    line-height: 10px;
+  }
 }
 
 .cards__promo svg {
@@ -154,6 +184,10 @@
   padding-left: 8px;
   padding-right: 8px;
   padding-bottom: 8px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 12px;
+  }
 }
 
 .cards__title {
@@ -164,6 +198,15 @@
   line-height: 24px;
   font-weight: 400;
   min-height: 48px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 0;
+  }
 }
 
 .cards__availability {
@@ -190,6 +233,10 @@
 .cards__item:hover .cards__descr,
 .cards__item:focus .cards__descr {
   display: block;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 

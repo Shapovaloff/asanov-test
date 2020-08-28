@@ -9,6 +9,13 @@
   @media (max-width: $tablet-width) {
     width: calc(5% + 53px);
   }
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 56px;
+  }
 }
 
 .user-list__link {
@@ -52,5 +59,9 @@
 
   &--basket {
     margin-right: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
   }
 }

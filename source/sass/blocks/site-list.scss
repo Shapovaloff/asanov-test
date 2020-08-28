@@ -2,6 +2,10 @@
   @include reset-list;
   padding-bottom: 5px;
   border-bottom: 1px solid #e6e4e7;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .site-list__link {

@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .order__list {
@@ -18,6 +22,11 @@
     font-size: 22px;
     line-height: 24px;
     font-weight: 700;
+
+    @media (max-width: $mobile-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &--oldprice {
@@ -49,11 +58,36 @@
   color: $accent-color;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
     color: #ffffff
+  }
+
+  @media (max-width: $mobile-width) {
+    color: $color-black;
+    border: 2px solid $accent-color;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 8px 9px 8px 7px;
+  }
+}
+
+.order__btn svg {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.order__btn span {
+  display: block;
+
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }
 

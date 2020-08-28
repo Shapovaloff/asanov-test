@@ -7,12 +7,23 @@
 
   @media (max-width: $tablet-width) {
     align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
   }
 }
 
 .copyright__text {
   @media (max-width: $tablet-width) {
     width: 60%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 32px;
   }
 }
 
