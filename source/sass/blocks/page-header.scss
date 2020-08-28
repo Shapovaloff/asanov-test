@@ -57,8 +57,12 @@
       left: 0;
       width: 24px;
       height: 24px;
-      background-image: url("../img/menu-btn.svg");
+      background-image: url("../img/close-btn.svg");
       background-repeat: no-repeat;
+    }
+
+    &--closed::before {
+      background-image: url("../img/menu-btn.svg");
     }
   }
 }
@@ -154,6 +158,14 @@
 .page-header__contacts-phone span {
   @media (max-width: $mobile-width) {
     display: none;
+  }
+}
+
+.page-header__contacts-phone svg {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
   }
 }
 

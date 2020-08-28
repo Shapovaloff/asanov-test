@@ -59,6 +59,7 @@
   background-color: transparent;
   cursor: pointer;
   outline: none;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
@@ -72,6 +73,7 @@
     min-width: 40px;
     min-height: 40px;
     padding: 8px 9px 8px 7px;
+    box-sizing: border-box;
   }
 }
 
@@ -100,6 +102,7 @@
   border: 1px solid $accent-color;
   border-radius: 8px;
   padding: 7px 5px;
+  box-sizing: border-box;
 }
 
 .order__btn-plus,
