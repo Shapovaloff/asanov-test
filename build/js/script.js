@@ -77,18 +77,17 @@
   };
 
   var breakpointChecker = function () {
-    itemMenu.addEventListener('mouseenter', activeSubmenu);
-    itemMenu.addEventListener('mouseleave', noActiveSubmenu);
-
     if (breakpoint.matches === false) {
       itemMenu.removeEventListener('mouseenter', activeSubmenu);
       itemMenu.removeEventListener('mouseleave', noActiveSubmenu);
-      return;
+    } else if (breakpoint.matches === true) {
+      itemMenu.addEventListener('mouseenter', activeSubmenu);
+      itemMenu.addEventListener('mouseleave', noActiveSubmenu);
     }
   };
 
   breakpoint.addListener(breakpointChecker);
-
+  breakpointChecker();
 })();
 
 // Фонция реализации выпадающего списка

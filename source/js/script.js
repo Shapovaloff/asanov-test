@@ -80,9 +80,7 @@
   itemMenu.addEventListener('mouseleave', noActiveSubmenu);
 
   var breakpointChecker = function () {
-
-
-    if (breakpoint.matches === true) {
+    if (breakpoint.matches === false) {
       itemMenu.removeEventListener('mouseenter', activeSubmenu);
       itemMenu.removeEventListener('mouseleave', noActiveSubmenu);
       return;
