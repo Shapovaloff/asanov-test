@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    border-top: 1px solid #e6e4e7;
+    border-top: 1px solid $gray-lines;
     padding-top: 21px;
     padding-left: 16px;
     padding-right: 16px;
@@ -87,11 +87,11 @@
   margin-right: 8px;
 
   &:last-child {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   &--logo {
-    max-width: 179px
+    max-width: 179px;
   }
 
   @media (max-width: $tablet-width) {
@@ -122,7 +122,7 @@
   @media (max-width: $mobile-width) {
     padding-top: 8px;
     padding-bottom: 7px;
-    border-bottom: 1px solid #E6E4E7;
+    border-bottom: 1px solid $gray-lines;
     margin-bottom: 2px;
     cursor: pointer;
 

@@ -3,7 +3,7 @@
   margin-top: 7px;
 
   @media (max-width: $mobile-width) {
-    background-color: #fff;
+    background-color: #ffffff;
   }
 }
 
@@ -21,7 +21,7 @@
 
   &:hover,
   &:focus {
-    background-color: #fdeaf1;
+    background-color: $light-pink;
   }
 
   @media (max-width: $tablet-width) {

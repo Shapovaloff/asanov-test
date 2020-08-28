@@ -1,5 +1,5 @@
 .page-header {
-  background-color: #f2f1f3;
+  background-color: $gray-fills;
   position: sticky;
   top: 0;
   right: 0;
@@ -40,6 +40,7 @@
 
 .page-header__btn {
   display: none;
+
   @media (max-width: $mobile-width) {
     display: block;
     position: relative;
@@ -50,7 +51,7 @@
     cursor: pointer;
     outline: none;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: 0;

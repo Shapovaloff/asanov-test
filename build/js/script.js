@@ -38,6 +38,8 @@
   var btnPrev = document.querySelector('.submenu-sofa__btn-title');
   var linkSubmenu = document.querySelector('.site-list__link--sofa');
 
+  var iteMenu = document.querySelector('.site-list__item--sofa');
+
   buttonMenu.addEventListener('click', function () {
     if (navMenu.classList.contains('aside__nav--closed')) {
       navMenu.classList.remove('aside__nav--closed');
@@ -65,6 +67,14 @@
     subMenu.classList.remove('submenu-sofa--active');
   });
 
+
+  iteMenu.addEventListener('mouseenter', function () {
+    subMenu.classList.add('submenu-sofa--active');
+  });
+
+  iteMenu.addEventListener('mouseleave', function () {
+    subMenu.classList.remove('submenu-sofa--active');
+  });
 })();
 
 // Фонция реализации выпадающего списка
