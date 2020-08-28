@@ -3,8 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 218px;
+  width: calc(18% + 53px);
   margin-left: 24px;
+
+  @media (max-width: $tablet-width) {
+    width: calc(5% + 53px);
+  }
 }
 
 .user-list__link {
@@ -20,6 +24,12 @@
 
 .user-list__link-text--basket {
   font-weight: 700;
+}
+
+.user-list__link-text {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .user-list__count {

@@ -20,6 +20,11 @@
   &:focus {
     background-color: #fdeaf1;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
 }
 
 .site-list__link-icon {

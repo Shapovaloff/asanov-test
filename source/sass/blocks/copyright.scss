@@ -4,6 +4,16 @@
   margin-left: 5px;
   align-items: flex-end;
   margin-bottom: 16px;
+
+  @media (max-width: $tablet-width) {
+    align-items: center;
+  }
+}
+
+.copyright__text {
+  @media (max-width: $tablet-width) {
+    width: 60%;
+  }
 }
 
 .copyright__privacy,
