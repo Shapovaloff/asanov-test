@@ -1,22 +1,40 @@
 .page-footer {
+  position: relative;
   padding-left: 40px;
   padding-right: 40px;
+  margin-top: -155px;
+  z-index: 1;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $big-desktop-width) {
+    display: block;
+  }
+
+  @media (max-width: $tablet-width) {
     padding-left: 20px;
     padding-right: 20px;
   }
 
   @media (max-width: $mobile-width) {
+    margin-top: 0;
     border-top: 1px solid $gray-lines;
     padding-top: 21px;
     padding-left: 16px;
     padding-right: 16px;
+    z-index: 0;
   }
 }
 
 .page-footer__contacts {
   margin-bottom: 32px;
+  width: 100%;
+
+  @media (max-width: $big-desktop-width) {
+    width: auto;
+  }
 
   @media (max-width: $mobile-width) {
     display: flex;
@@ -34,6 +52,7 @@
   justify-content: flex-start;
   color: $color-black;
   text-decoration: none;
+  transition: 0.3s;
 
   &:hover,
   &:focus {
@@ -60,6 +79,7 @@
     font-size: 14px;
     line-height: 24px;
     color: $color-black;
+    transition: 0.3s;
 
     &:hover,
     &:focus {
@@ -73,9 +93,14 @@
 }
 
 .page-footer__nav {
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 28px;
+
+  @media (max-width: $big-desktop-width) {
+    width: auto;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 30px;
@@ -95,9 +120,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: calc(50% - 6px);
     margin-right: 0;
-    margin-bottom: 20px;
+    width: 25%;
+
+    &--logo {
+      max-width: auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -125,10 +153,6 @@
     border-bottom: 1px solid $gray-lines;
     margin-bottom: 2px;
     cursor: pointer;
-
-    &--active {
-      margin-bottom: 5px;
-    }
   }
 }
 
@@ -143,6 +167,7 @@
 .page-footer__subtitle-btn svg {
   display: none;
   transform: rotate(90deg);
+  transition: 0.3s;
 
   @media (max-width: $mobile-width) {
     display: block;
@@ -151,19 +176,24 @@
 
 .page-footer__subtitle--active .page-footer__subtitle-btn svg {
   transform: rotate(-90deg);
+  transition: 0.3s;
 }
 
 .page-footer__list {
   @include reset-list;
 
   @media (max-width: $mobile-width) {
-    display: none;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-bottom: 4px;
   }
 }
 
 .page-footer__subtitle--active + .page-footer__list {
   @media (max-width: $mobile-width) {
-    display: block;
+    margin-bottom: 5px;
     margin-bottom: 4px;
   }
 }
@@ -184,6 +214,7 @@
   line-height: 24px;
   color: #a2a0a3;
   text-decoration: none;
+  transition: 0.3s;
 
   &:hover,
   &:focus {
@@ -206,11 +237,24 @@
 }
 
 .page-footer__middle {
+  width: 35%;
   display: flex;
   margin-bottom: 31px;
+
+  @media (max-width: $big-desktop-width) {
+    width: auto;
+  }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     margin-bottom: 25px;
+  }
+}
+
+.page-footer__copyright {
+  width: 100%;
+
+  @media (max-width: $big-desktop-width) {
+    width: auto;
   }
 }

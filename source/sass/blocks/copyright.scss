@@ -37,6 +37,7 @@
 .copyright__privacy {
   display: block;
   margin-bottom: 16px;
+  transition: 0.3s;
 
   &:hover,
   &:focus {
@@ -51,6 +52,7 @@
 .copyright__agency-link {
   display: flex;
   align-items: center;
+  transition: 0.3s;
 
   &:hover,
   &:focus {

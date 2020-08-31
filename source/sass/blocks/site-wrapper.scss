@@ -1,7 +1,5 @@
 .site-wrapper {
   position: relative;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 .site-wrapper__main {
@@ -9,12 +7,11 @@
   margin-left: 280px;
 
   @media (max-width: $tablet-width) {
-    margin-left: 240px;
+    margin-left: 0;
   }
 
   @media (max-width: $mobile-width) {
     display: flex;
-    margin-left: 0;
     flex-direction: column;
   }
 }

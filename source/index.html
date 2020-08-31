@@ -22,6 +22,7 @@
           <use xlink:href="#icon-logo"></use>
         </svg>
       </a>
+      <div class="aside__overflow"></div>
       <nav class="aside__nav aside__nav--closed">
         <ul class="aside__site-list site-list">
           <li class="site-list__item site-list__item--sofa">
@@ -192,7 +193,7 @@
                 <use xlink:href="#icon-more"></use>
               </svg>
               <span>Условия покупки</span>
-              <svg class="purchase-list__link-arrow" width="24" height="24" aria-label="Диван">
+              <svg class="purchase-list__link-arrow" width="24" height="24" aria-label="Условия покупки">
                 <use xlink:href="#icon-arrow"></use>
               </svg>
             </a>
@@ -204,7 +205,11 @@
     <div class="site-wrapper__main">
       <header class="page-header">
         <div class="page-header__wrapper">
-          <button type="button" class="page-header__btn page-header__btn--closed" aria-label="Открыть меню"></button>
+          <button type="button" class="page-header__btn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="page-header__location">
             <a href="#" class="page-header__location-city">
               <span>Санкт-Петербург</span>
@@ -234,6 +239,15 @@
         <h1 class="visually-hidden">Магазин мебели</h1>
         <section class="user-section">
           <h2 class="visually-hidden">Секция меню пользователя</h2>
+          <div class="user-section__location">
+            <a href="#" class="user-section__location-city">
+              <span>Санкт-Петербург</span>
+              <svg class="user-section__location-arrow" width="24" height="24">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+
           <form class="user-section__form form" method="GET">
             <label class="visually-hidden" for="form__search">поиск</label>
             <input class="form__search" id="form__search" type="text" placeholder="Поиск: Диван для кухни">
@@ -318,8 +332,57 @@
                 <span>Мебель для прихожей</span>
               </a>
             </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">
+                <svg class="site-menu__link-icon" width="28" height="28" aria-label="Детская мебель">
+                  <use xlink:href="#icon-child"></use>
+                </svg>
+                <span>Детская мебель</span>
+              </a>
+            </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">
+                <svg class="site-menu__link-icon" width="28" height="28" aria-label="Столы и стулья">
+                  <use xlink:href="#icon-table"></use>
+                </svg>
+                <span>Столы и стулья</span>
+              </a>
+            </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">
+                <svg class="site-menu__link-icon" width="28" height="28" aria-label="Офисная мебель">
+                  <use xlink:href="#icon-office"></use>
+                </svg>
+                <span>Офисная мебель</span>
+              </a>
+            </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">
+                <svg class="site-menu__link-icon" width="28" height="28" aria-label="Мебель из ротанга">
+                  <use xlink:href="#icon-rotang"></use>
+                </svg>
+                <span>Мебель из ротанга</span>
+              </a>
+            </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link">
+                <svg class="site-menu__link-icon" width="28" height="28" aria-label="Мебель премиум-класса">
+                  <use xlink:href="#icon-premium"></use>
+                </svg>
+                <span>Мебель премиум-класса</span>
+              </a>
+            </li>
 
-            <li class="site-menu__item site-menu__item--more">
+            <li class="site-menu__item site-menu__item--purchase">
+              <a href="#" class="site-menu__link">
+                <svg class="site-menu__link-icon" width="28" height="28" aria-label="Условия покупки">
+                  <use xlink:href="#icon-more"></use>
+                </svg>
+                <span>Условия покупки</span>
+              </a>
+            </li>
+
+            <li class="site-menu__more-btn">
               <button type="button" class="site-menu__link site-menu__link--button">
                 <span>Загрузить ещё</span>
                 <svg class="site-menu__button-arrow" width="16" height="16">
@@ -340,20 +403,10 @@
 
           <div class="cards cards">
             <div class="cards__wrapper">
-              <div class="cards__button-block">
-                <button type="button" class="cards__button cards__button--prev" disabled>
-                  <svg class="cards__button-arrow cards__button-arrow--prev" width="16" height="16">
-                    <use xlink:href="#icon-arrow-slider"></use>
-                  </svg>
-                </button>
-                <button type="button" class="cards__button cards__button--next">
-                  <svg class="cards__button-arrow cards__button-arrow--next" width="16" height="16">
-                    <use xlink:href="#icon-arrow-slider"></use>
-                  </svg>
-                </button>
-              </div>
+
 
               <div class="cards__list-container">
+
                 <ul class="cards__list swiper-wrapper">
                   <li class="cards__item swiper-slide">
                     <div class="cards__item-inner">
@@ -621,9 +674,292 @@
                           </li>
                         </ul>
                       </div>
+
+                    </div>
+                  </li>
+
+                  <li class="cards__item swiper-slide">
+                    <div class="cards__item-inner">
+                      <p class="cards__promo cards__promo--best-yellow">
+                        <svg width="16" height="16">
+                          <use xlink:href="#icon-best-price"></use>
+                        </svg>
+                        <span>Лучшая цена</span>
+                      </p>
+                      <div class="cards__img-block">
+                        <picture>
+                          <img class="cards__item-img" src="img/cards/camerton-2-desktop@1x.jpg" width="222" height="168"
+                            srcset="img/cards/camerton-2-desktop@2x.jpg 2x" alt="Диван-трансформер «Камертон-2»">
+                        </picture>
+                      </div>
+
+
+                      <div class="cards__description">
+                        <h3 class="cards__title">Диван-трансформер «Камертон-2»</h3>
+
+                        <div class="cards__order order">
+                          <ul class="order__list">
+                            <li class="order__item order__item--oldprice">10 540 ₽</li>
+                            <li class="order__item order__item--price">9 490 ₽</li>
+                          </ul>
+                          <button type="button" class="order__btn">
+                            <svg width="20" height="20">
+                              <use xlink:href="#icon-filled"></use>
+                            </svg>
+                            <span>Купить</span>
+                          </button>
+
+                          <div class="order__block-btn">
+                            <button type="button" class="order__btn-minus" aria-label="Убрать товар">
+                              <svg width="10" height="2">
+                                <use xlink:href="#icon-minus"></use>
+                              </svg>
+                            </button>
+                            <span>99</span>
+                            <button type="button" class="order__btn-plus" aria-label="Добавить товар">
+                              <svg width="10" height="10">
+                                <use xlink:href="#icon-plus"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+
+                        <p class="cards__availability">
+                          <svg class="cards__availability-icon" width="16" height="16">
+                            <use xlink:href="#icon-car-small"></use>
+                          </svg>
+                          <span class="cards__availability-text">В наличии</span>
+                        </p>
+                        <ul class="cards__descr">
+                          <li class="cards__descr-item">
+                            <p>Механизм:</p>
+                            <span>Аккордеон</span>
+                          </li>
+                          <li class="cards__descr-item">
+                            <p>Размеры:</p>
+                            <span>90 см (B) &#215; 95 см (Г) &#215; 218 см (Ш)</span>
+                          </li>
+                          <li class="cards__descr-item">
+                            <p>Спальное место:</p>
+                            <span>160 см (Ш) &#215; 218 см (Д)</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="cards__item swiper-slide">
+                    <div class="cards__item-inner">
+                      <p class="cards__promo cards__promo--present">
+                        <svg width="16" height="16">
+                          <use xlink:href="#icon-promo"></use>
+                        </svg>
+                        <span>Кресло в подарок</span>
+                      </p>
+                      <div class="cards__img-block">
+                        <picture>
+                          <img class="cards__item-img" src="img/cards/olimp-desktop@1x.jpg" width="222" height="168"
+                            srcset="img/cards/olimp-desktop@2x.jpg 2x" alt="Диван с декоративными подушками Олимп (Нексус)">
+                        </picture>
+                      </div>
+
+                      <div class="cards__description">
+                        <h3 class="cards__title">Диван с декоративными подушками "Олимп" (Нексус)</h3>
+
+                        <div class="cards__order order">
+                          <ul class="order__list">
+                            <li class="order__item order__item--oldprice">10 540 ₽</li>
+                            <li class="order__item order__item--price">12 290 ₽</li>
+                          </ul>
+                          <button type="button" class="order__btn">
+                            <svg width="20" height="20">
+                              <use xlink:href="#icon-filled"></use>
+                            </svg>
+                            <span>Купить</span>
+                          </button>
+                          <div class="order__block-btn">
+                            <button type="button" class="order__btn-minus" aria-label="Убрать товар">
+                              <svg width="10" height="2">
+                                <use xlink:href="#icon-minus"></use>
+                              </svg>
+                            </button>
+                            <span>99</span>
+                            <button type="button" class="order__btn-plus" aria-label="Добавить товар">
+                              <svg width="10" height="10">
+                                <use xlink:href="#icon-plus"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+
+                        <p class="cards__availability">
+                          <svg class="cards__availability-icon" width="16" height="16">
+                            <use xlink:href="#icon-car-small"></use>
+                          </svg>
+                          <span class="cards__availability-text">В наличии</span>
+                        </p>
+
+                        <ul class="cards__descr">
+                          <li class="cards__descr-item">
+                            <p>Механизм:</p>
+                            <span>Аккордеон</span>
+                          </li>
+                          <li class="cards__descr-item">
+                            <p>Размеры:</p>
+                            <span>90 см (B) &#215; 95 см (Г) &#215; 218 см (Ш)</span>
+                          </li>
+                          <li class="cards__descr-item">
+                            <p>Спальное место:</p>
+                            <span>160 см (Ш) &#215; 218 см (Д)</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </li>
+
+                  <li class="cards__item swiper-slide">
+                    <div class="cards__item-inner">
+                      <div class="cards__img-block">
+                        <picture>
+                          <img class="cards__item-img" src="img/cards/camelia-desktop@1x.jpg" width="222" height="168"
+                            srcset="img/cards/camelia-desktop@2x.jpg 2x" alt="Диван КАМЕЛИЯ">
+                        </picture>
+                      </div>
+                      <div class="cards__description">
+                        <h3 class="cards__title">Диван "КАМЕЛИЯ"</h3>
+
+                        <div class="cards__order order">
+                          <ul class="order__list">
+                            <li class="order__item order__item--oldprice">9 150 ₽</li>
+                            <li class="order__item order__item--price">14 490 ₽</li>
+                          </ul>
+                          <button type="button" class="order__btn">
+                            <svg width="20" height="20">
+                              <use xlink:href="#icon-filled"></use>
+                            </svg>
+                            <span>Купить</span>
+                          </button>
+                          <div class="order__block-btn">
+                            <button type="button" class="order__btn-minus" aria-label="Убрать товар">
+                              <svg width="10" height="2">
+                                <use xlink:href="#icon-minus"></use>
+                              </svg>
+                            </button>
+                            <span>99</span>
+                            <button type="button" class="order__btn-plus" aria-label="Добавить товар">
+                              <svg width="10" height="10">
+                                <use xlink:href="#icon-plus"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+
+                        <p class="cards__availability">
+                          <svg class="cards__availability-icon" width="16" height="16">
+                            <use xlink:href="#icon-car-small"></use>
+                          </svg>
+                          <span class="cards__availability-text">В наличии</span>
+                        </p>
+                        <ul class="cards__descr">
+                          <li class="cards__descr-item">
+                            <p>Механизм:</p>
+                            <span>Аккордеон</span>
+                          </li>
+                          <li class="cards__descr-item">
+                            <p>Размеры:</p>
+                            <span>90 см (B) &#215; 95 см (Г) &#215; 218 см (Ш)</span>
+                          </li>
+                          <li class="cards__descr-item">
+                            <p>Спальное место:</p>
+                            <span>160 см (Ш) &#215; 218 см (Д)</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="cards__item swiper-slide">
+                    <div class="cards__item-inner">
+                      <p class="cards__promo cards__promo--best-accent">
+                        <svg width="16" height="16">
+                          <use xlink:href="#icon-best-price"></use>
+                        </svg>
+                        <span>Лучшая цена</span>
+                      </p>
+                      <div class="cards__img-block">
+                        <picture>
+                          <img class="cards__item-img" src="img/cards/palermo-desktop@1x.jpg" width="222" height="168"
+                            srcset="img/cards/palermo-desktop@2x.jpg 2x" alt="Диван-кровать Палермо 2 рогожка">
+                        </picture>
+                      </div>
+
+                      <div class="cards__description">
+                        <h3 class="cards__title">Диван-кровать "Палермо 2" рогожка</h3>
+
+                        <div class="cards__order order">
+                          <ul class="order__list">
+                            <li class="order__item order__item--oldprice">16 810 ₽</li>
+                            <li class="order__item order__item--price">12 790 ₽</li>
+                          </ul>
+                          <button type="button" class="order__btn">
+                            <svg width="20" height="20">
+                              <use xlink:href="#icon-filled"></use>
+                            </svg>
+                            <span>Купить</span>
+                          </button>
+                          <div class="order__block-btn">
+                            <button type="button" class="order__btn-minus" aria-label="Убрать товар">
+                              <svg width="10" height="2">
+                                <use xlink:href="#icon-minus"></use>
+                              </svg>
+                            </button>
+                            <span>99</span>
+                            <button type="button" class="order__btn-plus" aria-label="Добавить товар">
+                              <svg width="10" height="10">
+                                <use xlink:href="#icon-plus"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+
+                        <p class="cards__availability">
+                          <svg class="cards__availability-icon" width="16" height="16">
+                            <use xlink:href="#icon-car-small"></use>
+                          </svg>
+                          <span class="cards__availability-text">В наличии</span>
+                        </p>
+                        <ul class="cards__descr">
+                          <li class="cards__descr-item">
+                            <p>Механизм:</p>
+                            <span>Аккордеон</span>
+                          </li>
+                          <li class="cards__descr-item">
+                            <p>Размеры:</p>
+                            <span>90 см (B) &#215; 95 см (Г) &#215; 218 см (Ш)</span>
+                          </li>
+                          <li class="cards__descr-item">
+                            <p>Спальное место:</p>
+                            <span>160 см (Ш) &#215; 218 см (Д)</span>
+                          </li>
+                        </ul>
+                      </div>
+
                     </div>
                   </li>
                 </ul>
+                <div class="cards__button-block">
+                  <button type="button" class="cards__button cards__button--prev">
+                    <svg class="cards__button-arrow cards__button-arrow--prev" width="16" height="16">
+                      <use xlink:href="#icon-arrow-slider"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="cards__button cards__button--next">
+                    <svg class="cards__button-arrow cards__button-arrow--next" width="16" height="16">
+                      <use xlink:href="#icon-arrow-slider"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -647,7 +983,7 @@
         </div>
         <nav class="page-footer__nav">
           <div class="page-footer__nav-block">
-            <h4 class="page-footer__subtitle page-footer__subtitle--active">
+            <h4 class="page-footer__subtitle">
               <span>Как мы работаем?</span>
               <button type="button" class="page-footer__subtitle-btn">
                 <svg width="24" height="24" aria-label="Открытие списка">

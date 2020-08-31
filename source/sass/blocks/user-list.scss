@@ -3,8 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(18% + 53px);
+  width: 218px;
   margin-left: 24px;
+
+  @media (max-width: $desktop-width) {
+    width: calc(18% + 53px);
+  }
 
   @media (max-width: $tablet-width) {
     width: calc(5% + 53px);
@@ -12,6 +16,7 @@
 
   @media (max-width: $mobile-width) {
     position: absolute;
+    z-index: 2;
     top: 16px;
     right: 16px;
     width: 56px;
@@ -27,6 +32,12 @@
   line-height: 24px;
   color: #1a1a1a;
   text-decoration: none;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .user-list__link-text--basket {

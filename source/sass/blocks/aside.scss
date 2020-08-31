@@ -7,12 +7,10 @@
   padding-top: 22px;
   padding-bottom: 22px;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.06);
+  z-index: 20;
+  display: block;
 
   @media (max-width: $tablet-width) {
-    width: 240px;
-  }
-
-  @media (max-width: $mobile-width) {
     position: static;
     width: auto;
     padding: 0;
@@ -25,13 +23,14 @@
   margin-left: 19px;
 
   @media (max-width: $tablet-width) {
-    margin-left: 10px;
+    margin: 0;
+    position: absolute;
+    z-index: 3;
+    top: 23px;
+    left: 60px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0;
-    position: absolute;
-    z-index: 1;
     top: 16px;
     left: 52px;
   }
@@ -41,30 +40,64 @@
   width: 122px;
   height: 28px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 93px;
     height: 23px;
   }
 }
 
-.aside__nav {
-  @media (max-width: $mobile-width) {
-    position: absolute;
-    top: 56px;
-    z-index: 1;
+.aside__overflow {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    background-color: #000000;
+    z-index: 2;
     width: 100%;
-    height: 100%;
-    max-height: 100vh;
+    height: 100vh;
+    transition: 0.3s;
+    pointer-events: none;
+    display: block;
+
+    &--active {
+      opacity: 0.7;
+      pointer-events: inherit;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 55px;
+  }
+}
+
+.aside__nav {
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 277px;
+    overflow-y: auto;
     background-color: #ffffff;
-    margin-top: 10px;
+    padding-top: 82px;
+    z-index: 2;
+    height: 100%;
+    max-height: 100%;
+    transition: all 0.6s;
 
     &--closed {
-      display: none;
+      left: -277px;
     }
 
     &--opened {
-      display: block;
       overflow-y: auto;
+      left: 0;
     }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 66px;
   }
 }
